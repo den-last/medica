@@ -1,0 +1,142 @@
+.contacts {
+    padding: 15px 0 150px;
+
+    @media screen and (max-width: 992px) {
+        padding: 15px 0 120px;
+    }
+    &-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+        }
+        .heading {
+            grid-area: 1/1/2/3;
+        }
+        .tel {
+            padding: 15px;
+            gap: 20px;
+            @media screen and (max-width: 992px) {
+                gap: 10px;
+                
+            }
+            background-image: unset;
+            @media screen and (max-width: 992px) {
+                padding: 5px 15px;
+            }
+            .country {
+                font-size: 27px;
+                font-weight: 700;
+                line-height: 1.2;
+                @media screen and (max-width: 992px) {
+                    font-size: 24px;
+                }
+            }
+            .tel-link {
+                &:hover {
+                    color: $second;
+                }
+            }
+            img {
+                @media screen and (max-width: 992px) {
+                    height: 48px;
+
+                }
+                @media screen and (max-width: 767px) {
+                    height: 80px;
+                    
+                }
+            }
+        }
+        .link {
+            align-items: flex-start;
+            gap: 15px;
+            background-image: unset;
+            padding: 45px 30px 30px;
+            @media screen and (max-width: 992px) {
+                padding: 30px 15px 15px;
+            }
+            .card-icon {
+                display: block;
+                height: 40px;
+                width: auto;
+
+            }
+            h5 {
+                color: $accent;
+            }
+            p {
+                margin: 0;
+            }
+            .read-more-wrap {
+                margin-top: auto;
+            }
+        }
+        .form {
+            grid-area: 3/1/4/4;
+            padding: 0;
+            overflow: hidden;
+            background-image: url('img/corner4.svg');
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+            }
+            &-img {
+                width: 57%;
+                @media screen and (max-width: 1199px) {
+                    width: 50%;
+                }
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    
+                }
+                img {
+                    display: block;
+                    @include o-fit;
+                }
+            }
+            &-txt {
+                width: 43%;
+                padding: 60px 50px 60px 80px;
+                gap: 15px;
+                flex-grow: 1;
+                @media screen and (max-width: 1199px) {
+                    width: 50%;
+                }
+                @media screen and (max-width: 992px) {
+                    padding: 30px 12px 30px 27px;
+                }
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    padding: 30px 12px;
+                    background-image: url('img/corner4.svg');
+                    background-position: top right;
+                    background-repeat: no-repeat;
+                }
+                h4 {
+                    text-align: center;
+                }
+                .tabs-wrap {
+                    width: 100%;
+                    flex-grow: 1;
+                border: 1px solid red;
+                }
+                .tabs-switch {
+                    border-radius: 0;
+                    width: 85%;
+                    background-color: transparent;
+                    border: none;
+                    padding: 0;
+                    margin-bottom: 15px;
+                    &-elem {
+                        border: 1px solid #32CC99;
+                        width: calc(50% - 10px);
+                    }
+                }
+            }
+        }
+    }
+}

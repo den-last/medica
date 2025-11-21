@@ -1,0 +1,27 @@
+.partners-slider {
+    padding: 75px 0;
+    @media screen and (max-width: 992px) {
+        padding: 60px 0;
+    }
+    h2 {
+        @media screen and (max-width: 992px) {
+            margin-bottom: 30px;
+        }
+    }
+    &-wrap {
+        max-width: 870px;
+        margin: 0 auto;
+        @media screen and (max-width: 992px) {
+            max-width: 165px;
+        }
+        .partnersSwiper {
+            overflow: visible;
+        }
+        .logo-card {
+            width: 270px;
+            @media screen and (max-width: 992px) {
+                width: 165px;
+            }
+        }
+    }
+}

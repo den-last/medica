@@ -1,0 +1,12 @@
+.footer {
+	background: $darkblue;
+	position: relative;
+	margin-top: auto;
+    &--main {
+        padding: 70px 0 100px;
+        border-bottom: 1px solid $white;
+    }
+    &--copyright {
+        padding:25px 0 40px;
+    }
+}

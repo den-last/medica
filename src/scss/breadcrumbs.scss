@@ -1,0 +1,36 @@
+.breadcrumbs {
+    padding: 34px 0;
+    &-elem {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.5;
+        @media screen and (max-width: 992px) {
+            font-size: 12px;
+        }
+    }
+    &-link{
+        padding-right: 20px;
+        position: relative;
+        color: #123456;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 2px;
+            right: 0;
+            width: 16px;
+            height: 16px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url('src/assets/img/icons/chev-right.svg');
+            @media screen and (max-width: 992px) {
+                top: 0;
+            }
+        }
+    }
+    &-current {
+        color: #123456;
+    }
+    
+}
