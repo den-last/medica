@@ -1,12 +1,104 @@
 .footer {
-	background: $darkblue;
-	position: relative;
-	margin-top: auto;
-    &--main {
-        padding: 70px 0 100px;
-        border-bottom: 1px solid $white;
+  background: $darkblue;
+  position: relative;
+  margin-top: auto;
+  &-logo img {
+    max-width: 100%;
+  }
+  &--main {
+    padding: 70px 0 100px;
+    border-bottom: 1px solid $white;
+    gap: 4.2vw;
+    @media screen and (max-width: 1280px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
-    &--copyright {
-        padding:25px 0 40px;
+    @media screen and (max-width: 767px) {
+      gap: 24px;
+      padding: 40px 0 60px;
     }
+
+    .foot-txt {
+      margin: 40px 0;
+      @media screen and (max-width: 767px) {
+        margin: 40px 0 24px;
+      }
+    }
+  }
+  &--copyright {
+    padding: 25px 0 40px;
+    @media screen and (max-width: 767px) {
+      padding: 16px 0 32px;
+    }
+  }
+  &-col {
+    max-width: 235px;
+    @media screen and (max-width: 1280px) {
+      max-width: none;
+      width: 40%;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    &:first-child {
+      max-width: 405px;
+      margin-right: auto;
+      @media screen and (max-width: 1280px) {
+        max-width: none;
+        width: 40%;
+        margin-right: 0;
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    h5 {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      &:after {
+        @media screen and (max-width: 767px) {
+          content: "";
+          display: block;
+          width: 24px;
+          min-width: 24px;
+          height: 24px;
+          background-image: url(/img/icons/shevron-down-wt.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+    ul {
+      gap: 12px;
+      * {
+        color: $white;
+      }
+      a:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.soc-wrap {
+  gap: 16px;
+}
+.footer ._h5.open:after {
+  transform: rotate(180deg);
+}
+.acc-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.9s ease;
+}
+
+.acc-body.open {
+  max-height: 250px;
+  transition: all 0.9s ease;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 20px;
+    transition: all 0.9s ease;
+  }
 }
