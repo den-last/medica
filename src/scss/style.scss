@@ -1061,13 +1061,13 @@ a {
 .swiper-pagination-bullet {
   width: 16px;
   height: 16px;
-  background: $black;
-  border-radius: 4px;
+  background: #000;
+  border-radius: 50%;
   margin: 0 0;
 }
 
 .swiper-pagination-bullet-active {
-  //   background: $second;
+    background: $darkblue;
 }
 
 ._icon-txt {

@@ -4,7 +4,7 @@
         border-radius: 24px;
         overflow: hidden;
         height: 0;
-        padding-bottom: 85%;
+        padding-bottom: 46.2%;
         width: 55%;
         min-width: 55%;
         img {
@@ -12,13 +12,28 @@
         }
     }
     .txt-wrap {
-        margin-top: 24px;
+        margin-left: 32px;
+        
+        .sale-txt._h3 {
+            margin-bottom: 4px;
+        }
         h4 {
             text-align: center;
+            margin: 0 0 24px;
         }
         .specialty {
             display: block;
             text-align: center;
+        }
+        p {
+            margin: 0 0 6px;
+        }
+        .bttn-wrap {
+            gap: 8px;
+            margin-top: auto;
+            .bttn {
+                margin-left: auto;
+            }
         }
     }
 }

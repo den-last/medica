@@ -1,0 +1,30 @@
+.swiper.base {
+    padding-bottom: 68px;
+    border: 1px solid red;
+    .swiper-button-next, .swiper-button-prev {
+        top: auto;
+        bottom: 0;
+        margin-top: 0;
+        width: 18px;
+        height: 18px;
+        // background-color: #00000041;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .swiper-button-prev {
+        left: auto;
+        right: 50px;
+        background-image: url(../../public/img/icons/arr-prev.svg);
+        
+    }
+    .swiper-button-next {
+        right: 0;
+        background-image: url(../../public/img/icons/arr-next.svg);
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 0;
+    }
+    .swiper-pagination {
+        bottom: -7px;
+    }
+}

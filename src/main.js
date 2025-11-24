@@ -60,20 +60,18 @@ $(document).scroll(function () {
 const swiperPromo = new Swiper('.swiperPromo', {
 slidesPerView: 2,
   pagination: {
-    el: '.testimonial-pagination',
+    el: '.promoPagination',
   },
   navigation: {
-    nextEl: '.testimonial-button-next',
-    prevEl: '.testimonial-button-prev',
+    nextEl: '.promoNext',
+    prevEl: '.promoPrev',
   },
   breakpoints: {
     320: {
       spaceBetween: 15,
-      initialSlide: 0,
     },
     768: {
-      spaceBetween: 30,
-      initialSlide: 1,
+      spaceBetween: 40,
     },
   },
 
@@ -81,11 +79,11 @@ slidesPerView: 2,
 const swiperDocs = new Swiper('.swiperDocs', {
 
   pagination: {
-    el: '.testimonial-pagination',
+    el: '.docsPagination',
   },
   navigation: {
-    nextEl: '.testimonial-button-next',
-    prevEl: '.testimonial-button-prev',
+    nextEl: '.docsNext',
+    prevEl: '.docsPrev',
   },
   breakpoints: {
     320: {
@@ -93,8 +91,7 @@ const swiperDocs = new Swiper('.swiperDocs', {
       initialSlide: 0,
     },
     768: {
-      spaceBetween: 30,
-      initialSlide: 1,
+      spaceBetween: 40,
       slidesPerView: 4,
     },
   },
