@@ -1140,7 +1140,13 @@ a {
     padding-bottom: 30px;
   }
 }
+.pb40 {
+  padding-bottom: 40px;
 
+  @media screen and (max-width: 992px) {
+    padding-bottom: 32px;
+  }
+}
 .pt60 {
   padding-top: 60px;
 
