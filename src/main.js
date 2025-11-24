@@ -57,7 +57,7 @@ $(document).scroll(function () {
     // .addClass("header-transparent");
   }
 });
-const swiper = new Swiper('.swiperPromo', {
+const swiperPromo = new Swiper('.swiperPromo', {
 slidesPerView: 2,
   pagination: {
     el: '.testimonial-pagination',
@@ -74,6 +74,28 @@ slidesPerView: 2,
     768: {
       spaceBetween: 30,
       initialSlide: 1,
+    },
+  },
+
+});
+const swiperDocs = new Swiper('.swiperDocs', {
+
+  pagination: {
+    el: '.testimonial-pagination',
+  },
+  navigation: {
+    nextEl: '.testimonial-button-next',
+    prevEl: '.testimonial-button-prev',
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 15,
+      initialSlide: 0,
+    },
+    768: {
+      spaceBetween: 30,
+      initialSlide: 1,
+      slidesPerView: 4,
     },
   },
 

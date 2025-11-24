@@ -659,10 +659,43 @@ a {
 
     &:hover {
       > .arr-elem {
-      background-color: $mediumblue;
+        background-color: $mediumblue;
+      }
     }
+  }
+  &-border {
+    transition: all ease 0.3s;
+
+    @media screen and (max-width: 992px) {
+      gap: 8px;
     }
 
+    .arr-elem {
+      background-color: transparent;
+      border: 1px solid $black;
+      svg {
+        @media screen and (max-width: 992px) {
+          width: 50%;
+        }
+      }
+    }
+    ._txt-semi {
+      color: $black;
+    }
+    svg path {
+      fill: $black;
+      transition: all ease 0.3s;
+    }
+
+    &:hover {
+      > .arr-elem {
+        background-color: $black;
+      }
+      svg path {
+        fill: $white;
+        transition: all ease 0.3s;
+      }
+    }
   }
 
   // @media screen and (max-width: 992px) {
@@ -869,7 +902,7 @@ a {
   height: 48px;
   min-width: 48px;
   border-radius: 50%;
-transition: .3s;
+  transition: 0.3s;
   @media screen and (max-width: 992px) {
     width: 24px;
     height: 24px;
@@ -877,7 +910,7 @@ transition: .3s;
   }
   svg {
     path {
-      transition: .3s;
+      transition: 0.3s;
     }
   }
 }
@@ -1098,7 +1131,6 @@ transition: .3s;
   @media screen and (max-width: 992px) {
     padding-top: 60px;
   }
-
 }
 
 .pb60 {
@@ -1107,7 +1139,6 @@ transition: .3s;
   @media screen and (max-width: 992px) {
     padding-bottom: 30px;
   }
-
 }
 
 .pt60 {
@@ -1116,7 +1147,6 @@ transition: .3s;
   @media screen and (max-width: 992px) {
     padding-top: 30px;
   }
-
 }
 
 img {

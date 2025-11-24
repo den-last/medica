@@ -1,0 +1,28 @@
+.doc-card {
+    .img-wrap {
+        position: relative;
+        border-radius: 24px;
+        overflow: hidden;
+        height: 0;
+        padding-bottom: 114%;
+        img {
+            position: absolute;
+        }
+        .bttn-border {
+            position: absolute;
+            right: 24px;
+            bottom: 24px;
+            z-index: 2;
+        }
+    }
+    .txt-wrap {
+        margin-top: 24px;
+        h4 {
+            text-align: center;
+        }
+        .specialty {
+            display: block;
+            text-align: center;
+        }
+    }
+}
