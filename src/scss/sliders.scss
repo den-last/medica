@@ -54,5 +54,8 @@
 
     .swiper-pagination {
         bottom: -7px;
+        @media screen and (max-width: 767px) {
+            bottom: -5px;
+        }
     }
 }

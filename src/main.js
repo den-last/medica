@@ -118,7 +118,7 @@ const swiperBlog = new Swiper('.swiperBlog', {
       spaceBetween: 15,
       slidesPerView: 1,
     },
-    768: {
+    481: {
       spaceBetween: 20,
       slidesPerView: 2,
     },

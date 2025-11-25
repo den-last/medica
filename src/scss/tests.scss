@@ -1,0 +1,8 @@
+.tests-grid {
+    display: grid;
+    grid-template-columns: 34% auto;
+    grid-gap: 40px;
+    .tests-img {
+        grid-area: 1/1/3/2;
+    }
+}

@@ -9,6 +9,7 @@
     .swiper-pagination-bullet-active {
         background: #0a1948;
     }
+
     .swiper-button-disabled {
         opacity: 1;
         filter: brightness(0) invert(1);
@@ -17,6 +18,11 @@
 
 .blog-card {
     background: $white;
+
+    @media screen and (max-width: 992px) {
+        border-radius: 16px;
+        padding: 8px 8px 16px;
+    }
 
     .img-wrap {
         position: relative;
@@ -60,10 +66,10 @@
         .bttn-border {
             margin-left: auto;
 
-            @media screen and (max-width: 767px) {
-                right: 8px;
-                bottom: 8px;
-            }
+            // @media screen and (max-width: 767px) {
+            //     right: 8px;
+            //     bottom: 8px;
+            // }
         }
     }
 }
