@@ -1064,6 +1064,10 @@ a {
   background: #000;
   border-radius: 50%;
   margin: 0 0;
+  @media screen and (max-width: 767px) {
+             width: 8px;
+        height: 8px;
+        }
 }
 
 .swiper-pagination-bullet-active {
@@ -1104,13 +1108,39 @@ a {
   border-radius: 32px;
   background-color: $lightblue20;
   padding: 24px;
-  //   @media screen and (max-width: 992px) {
-  //     border-radius: 15px;
-  //     padding: 15px;
-  //     background-size: 33%;
-  //   }
+  height: 100%;
+  @media screen and (max-width: 1499px) {
+            border-radius: 16px;
+        }
+  @media screen and (max-width: 767px) {
+        border-radius: 8px;
+    }
 }
-
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* <-- количество строк */
+  // line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis; /* на всякий случай */
+  line-height: 1.625; /* важно: фиксировать line-height */
+}
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* <-- количество строк */
+  // line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis; /* на всякий случай */
+  line-height: 1.625; /* важно: фиксировать line-height */
+}
+.img-wrap a img {
+transition: .3s;
+}
+.img-wrap:hover a img {
+transform: scale(1.02);
+transition: .3s;
+}
 .ul-norm {
   list-style: none;
   padding-left: 0;
@@ -1132,6 +1162,20 @@ a {
     padding-top: 60px;
   }
 }
+.pb120 {
+  padding-bottom: 120px;
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 60px;
+  }
+}
+.pt60 {
+  padding-top: 60px;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 30px;
+  }
+}
 
 .pb60 {
   padding-bottom: 60px;
@@ -1145,13 +1189,6 @@ a {
 
   @media screen and (max-width: 992px) {
     padding-bottom: 32px;
-  }
-}
-.pt60 {
-  padding-top: 60px;
-
-  @media screen and (max-width: 992px) {
-    padding-top: 30px;
   }
 }
 

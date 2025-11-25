@@ -71,6 +71,9 @@ slidesPerView: 2,
       spaceBetween: 15,
     },
     768: {
+      spaceBetween: 20,
+    },
+    993: {
       spaceBetween: 40,
     },
   },
@@ -88,11 +91,40 @@ const swiperDocs = new Swiper('.swiperDocs', {
   breakpoints: {
     320: {
       spaceBetween: 15,
-      initialSlide: 0,
+      slidesPerView: 2,
     },
     768: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    993: {
       spaceBetween: 40,
       slidesPerView: 4,
+    },
+  },
+
+});
+const swiperBlog = new Swiper('.swiperBlog', {
+
+  pagination: {
+    el: '.blogPagination',
+  },
+  navigation: {
+    nextEl: '.blogNext',
+    prevEl: '.blogPrev',
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 15,
+      slidesPerView: 1,
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    993: {
+      spaceBetween: 40,
+      slidesPerView: 3,
     },
   },
 

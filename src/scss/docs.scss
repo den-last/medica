@@ -5,6 +5,12 @@
         overflow: hidden;
         height: 0;
         padding-bottom: 114%;
+        @media screen and (max-width: 1499px) {
+            border-radius: 16px;
+        }
+@media screen and (max-width: 767px) {
+            border-radius: 8px;
+        }
         img {
             position: absolute;
         }
@@ -13,10 +19,18 @@
             right: 24px;
             bottom: 24px;
             z-index: 2;
+            @media screen and (max-width: 767px) {
+            right: 8px;
+            bottom: 8px;
+        }
         }
     }
     .txt-wrap {
         margin-top: 24px;
+        @media screen and (max-width: 767px) {
+            margin-top: 16px;
+        }
+
         h4 {
             text-align: center;
         }
