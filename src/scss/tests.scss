@@ -4,5 +4,36 @@
     grid-gap: 40px;
     .tests-img {
         grid-area: 1/1/3/2;
+        .img-wrap {
+            height: 100%;
+            border-radius: 32px;
+            overflow: hidden;
+            @media screen and (max-width: 767px) {
+                border-radius: 8px;
+            }
+    
+        }
+    }
+    .tests-head {
+       .section-head {
+        flex-wrap: wrap;
+        ._h1 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0;
+            width: 70%;
+        }
+       }
+    }
+    .tests-slider {
+        .icon-wrap {
+            width: 80px;
+            height: 80px;
+            background: #E0F4FF;
+            border-radius: 50%;
+            margin: 0 auto 32px;
+        }
     }
 }
