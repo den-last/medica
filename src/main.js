@@ -129,3 +129,33 @@ const swiperBlog = new Swiper('.swiperBlog', {
   },
 
 });
+
+const swiperTests = new Swiper('.swiperTests', {
+
+  pagination: {
+    el: '.testsPagination',
+  },
+  navigation: {
+    nextEl: '.testsNext',
+    prevEl: '.testsPrev',
+  },
+  breakpoints: {
+    320: {
+      spaceBetween: 15,
+      slidesPerView: 2.5,
+    },
+    481: {
+      spaceBetween: 12,
+      slidesPerView:3,
+    },
+    768: {
+      spaceBetween: 12,
+      slidesPerView:4,
+    },
+    993: {
+      spaceBetween: 40,
+      slidesPerView: 3,
+    },
+  },
+
+});

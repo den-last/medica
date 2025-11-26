@@ -649,20 +649,23 @@ a {
         }
       }
     }
+
     ._txt-semi {
       color: $black;
     }
+
     svg path {
       fill: #ffffff;
       transition: all ease 0.3s;
     }
 
     &:hover {
-      > .arr-elem {
+      >.arr-elem {
         background-color: $mediumblue;
       }
     }
   }
+
   &-border {
     transition: all ease 0.3s;
 
@@ -673,24 +676,28 @@ a {
     .arr-elem {
       background-color: transparent;
       border: 1px solid $black;
+
       svg {
         @media screen and (max-width: 992px) {
           width: 50%;
         }
       }
     }
+
     ._txt-semi {
       color: $black;
     }
+
     svg path {
       fill: $black;
       transition: all ease 0.3s;
     }
 
     &:hover {
-      > .arr-elem {
+      >.arr-elem {
         background-color: $black;
       }
+
       svg path {
         fill: $white;
         transition: all ease 0.3s;
@@ -903,11 +910,13 @@ a {
   min-width: 48px;
   border-radius: 50%;
   transition: 0.3s;
+
   @media screen and (max-width: 992px) {
     width: 24px;
     height: 24px;
     min-width: 24px;
   }
+
   svg {
     path {
       transition: 0.3s;
@@ -1023,9 +1032,11 @@ a {
 ._d-blue {
   color: $darkblue;
 }
+
 ._blue {
   color: $mediumblue;
 }
+
 .sw-arr {
   width: 40px;
   height: 40px;
@@ -1064,14 +1075,15 @@ a {
   background: #000;
   border-radius: 50%;
   margin: 0 0;
+
   @media screen and (max-width: 767px) {
-             width: 8px;
-        height: 8px;
-        }
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .swiper-pagination-bullet-active {
-    background: $darkblue;
+  background: $darkblue;
 }
 
 ._icon-txt {
@@ -1109,37 +1121,68 @@ a {
   background-color: $lightblue20;
   padding: 24px;
   height: 100%;
+
   @media screen and (max-width: 1499px) {
-            border-radius: 16px;
-        }
+    border-radius: 16px;
+  }
+
   @media screen and (max-width: 767px) {
-        border-radius: 8px;
-    }
+    border-radius: 8px;
+  }
 }
+
 .clamp-3 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* <-- количество строк */
+  -webkit-line-clamp: 3;
+  /* <-- количество строк */
   // line-clamp: 3;
   overflow: hidden;
-  text-overflow: ellipsis; /* на всякий случай */
-  line-height: 1.625; /* важно: фиксировать line-height */
+  text-overflow: ellipsis;
+  /* на всякий случай */
+  line-height: 1.625;
+  /* важно: фиксировать line-height */
 }
+
 .clamp-2 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; /* <-- количество строк */
+  -webkit-line-clamp: 2;
+  /* <-- количество строк */
   // line-clamp: 3;
   overflow: hidden;
-  text-overflow: ellipsis; /* на всякий случай */
-  line-height: 1.625; /* важно: фиксировать line-height */
+  text-overflow: ellipsis;
+  /* на всякий случай */
+  line-height: 1.625;
+  /* важно: фиксировать line-height */
 }
+
 .img-wrap a img {
-transition: .3s;
+  transition: .3s;
 }
+
 .img-wrap:hover a img {
-transform: scale(1.02);
-transition: .3s;
+  transform: scale(1.02);
+  transition: .3s;
+}
+
+.rad-32-8 {
+  border-radius: 32px;
+  overflow: hidden;
+  @media screen and (max-width: 992px) {
+    border-radius: 8px;
+  }
+}
+.accent-txt {
+  display: inline-block;
+  padding: 0 10px;
+  color: $mediumblue;
+  background: $lightblue40;
+  border-radius: 30px;
+  @media screen and (max-width: 992px) {
+    padding: 0 6px;
+    border-radius: 20px;
+  }
 }
 .ul-norm {
   list-style: none;
@@ -1162,6 +1205,7 @@ transition: .3s;
     padding-top: 60px;
   }
 }
+
 .pb120 {
   padding-bottom: 120px;
 
@@ -1169,6 +1213,7 @@ transition: .3s;
     padding-bottom: 60px;
   }
 }
+
 .pt60 {
   padding-top: 60px;
 
@@ -1184,6 +1229,7 @@ transition: .3s;
     padding-bottom: 30px;
   }
 }
+
 .pb40 {
   padding-bottom: 40px;
 

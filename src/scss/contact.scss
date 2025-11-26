@@ -1,0 +1,48 @@
+.contact-wrap {
+    align-items: stretch;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .col {
+        width: calc(50% - 20px);
+        min-width: calc(50% - 20px);
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+            min-width: auto;
+        }
+
+        .img-wrap {
+            height: 100%;
+
+            @media screen and (max-width: 992px) {
+                height: auto
+            }
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            max-width: 640px;
+
+            @media screen and (max-width: 992px) {
+                margin-bottom: 24px;
+            }
+        }
+
+        h4 {
+            max-width: 640px;
+
+        }
+
+        .form-wrap {
+            margin-top: 60px;
+
+            @media screen and (max-width: 992px) {
+                margin-top: 16px;
+            }
+        }
+    }
+}

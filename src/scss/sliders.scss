@@ -4,6 +4,7 @@
 
 .swiper.base {
     padding-bottom: 68px;
+    overflow: visible;
     // border: 1px solid red;
 
     @media screen and (max-width: 1499px) {
@@ -54,7 +55,7 @@
 
     .swiper-pagination {
         bottom: -7px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             bottom: -5px;
         }
     }
