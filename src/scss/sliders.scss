@@ -4,7 +4,7 @@
 
 .swiper.base {
     padding-bottom: 68px;
-    overflow: visible;
+    
     // border: 1px solid red;
 
     @media screen and (max-width: 1499px) {
@@ -13,6 +13,7 @@
 
     @media screen and (max-width: 767px) {
         padding-bottom: 26px;
+        overflow: visible;
     }
 
     .swiper-button-next,
