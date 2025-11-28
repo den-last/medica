@@ -6,7 +6,7 @@ $lightgray: #d6d8dd;
 
 $lightblue20: #f4fbff;
 $lightblue40: #ccedff;
-
+$lightblue50: #E0F4FF;
 // $blue: #00529A;
 $mediumblue: #00529a;
 $darkblue: #0a1948;
@@ -586,10 +586,34 @@ a {
   color: inherit;
   transition: all 0.3s;
 
-  // font-weight: 700;
-  &:hover {
-    color: $mediumblue;
-    transition: all 0.3s;
+  // &:hover {
+  //   color: $mediumblue;
+  //   transition: all 0.3s;
+  // }
+}
+
+p a:hover {
+  color: $mediumblue;
+  transition: all 0.3s;
+}
+
+.arr-elem {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  transition: 0.3s;
+
+  @media screen and (max-width: 992px) {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+  }
+
+  svg {
+    path {
+      transition: 0.3s;
+    }
   }
 }
 
@@ -616,19 +640,32 @@ a {
   &-base {
     // background: $gradient;
     color: $white;
-    background-size: 200% 200%;
-    background-position: 100% 50%;
-    transition: background-position 0.5s;
+    transition: 0.3s;
     border: none;
-
-    // svg path {
-    //     stroke: #ffffff;
-    // }
+    height: 48px;
+    border-radius: 32px;
+    background-color: $mediumblue;
+    padding: 0 40px;
+    gap: 11px;
 
     &:hover {
-      color: #ffffff;
-      background-position: 0% 50%;
-      transition: background-position 0.5s;
+      transition: 0.3s;
+      background-color: $darkblue;
+
+      ._txt-semi {
+        color: $white;
+        transition: 0.3s;
+      }
+    }
+    .arr-elem {
+      width: auto;
+      height: auto;
+      min-width: auto;
+      background-color: transparent;
+    }
+    svg path {
+      fill: #ffffff;
+      transition: all ease 0.3s;
     }
   }
 
@@ -904,25 +941,7 @@ a {
   // }
 }
 
-.arr-elem {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
-  border-radius: 50%;
-  transition: 0.3s;
 
-  @media screen and (max-width: 992px) {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-  }
-
-  svg {
-    path {
-      transition: 0.3s;
-    }
-  }
-}
 
 // .bttn-white:hover::after {
 //     opacity: 1;
@@ -1169,21 +1188,25 @@ a {
 .rad-32-8 {
   border-radius: 32px;
   overflow: hidden;
+
   @media screen and (max-width: 992px) {
     border-radius: 8px;
   }
 }
+
 .accent-txt {
   display: inline-block;
   padding: 0 10px;
   color: $mediumblue;
   background: $lightblue40;
   border-radius: 30px;
+
   @media screen and (max-width: 992px) {
     padding: 0 6px;
     border-radius: 20px;
   }
 }
+
 .ul-norm {
   list-style: none;
   padding-left: 0;
