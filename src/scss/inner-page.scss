@@ -1,113 +1,159 @@
 .inner-page {
-  &-title {
-    margin-bottom: 40px;
+    &-title {
+        margin-bottom: 40px;
 
-    @media screen and (max-width: 992px) {
-      margin-bottom: 32px;
-    }
-  }
-
-  &-wrap {
-    gap: 33px;
-  }
-
-  .col-sidebar {
-    width: 350px;
-    min-width: 350px;
-  }
-
-  .side-menu {
-    &-elem {
-      min-height: 60px;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      margin-bottom: 16px;
-      transition: 0.3s;
-      cursor: pointer;
-      @media screen and (max-width: 1499px) {
-        border-radius: 32px;
-      }
-      &.active {
-        background-color: $lightblue40;
-        transition: 0.3s;
-
-        h6 {
-          color: $mediumblue;
-          transition: 0.3s;
+        @media screen and (max-width: 992px) {
+            margin-bottom: 32px;
         }
-      }
-      &:hover {
-        background-color: $lightblue40;
-        transition: 0.3s;
-
-        h6 {
-          color: $mediumblue;
-          transition: 0.3s;
-        }
-      }
     }
-  }
+
+    &-wrap {
+        gap: 33px;
+    }
+
+    .col-sidebar {
+        width: 350px;
+        min-width: 350px;
+    }
+
+    .col-main {
+        width: 100%;
+    }
+
+    .side-menu {
+        &-elem {
+            min-height: 60px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            transition: 0.3s;
+            cursor: pointer;
+
+            @media screen and (max-width: 1499px) {
+                border-radius: 32px;
+            }
+
+            &.active {
+                background-color: $lightblue40;
+                transition: 0.3s;
+
+                h6 {
+                    color: $mediumblue;
+                    transition: 0.3s;
+                }
+            }
+
+            &:hover {
+                background-color: $lightblue40;
+                transition: 0.3s;
+
+                h6 {
+                    color: $mediumblue;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
 }
+
 .text-editor {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 1rem;
-  }
 
-  p {
-    margin-top: 0;
-  }
-  img {
-    display: block;
-    width: 100%;
-    border-radius: 32px;
-    margin: 72px 0;
-    @media screen and (max-width: 992px) {
-        border-radius: 16px;
-        margin: 32px 0;
-      }
-    
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        border-radius: 32px;
+        margin: 72px 0;
+
+        @media screen and (max-width: 992px) {
+            border-radius: 16px;
+            margin: 32px 0;
+        }
+
+    }
 }
+
 .tab-head {
     width: 100%;
     padding: 8px 0;
     border-bottom: 1px solid $lightgray;
     margin-bottom: 24px;
-    .icon {
-        transform: rotate(180deg);
-        transition: 0.3s;
-    }
-    h6 {
-        color: $mediumblue;
-      }
+
     &.active {
         .icon {
             transform: rotate(0deg);
             transition: 0.3s;
         }
-      }
+    }
+
+    .icon {
+        transform: rotate(180deg);
+        transition: 0.3s;
+    }
+
+    h6 {
+        color: $mediumblue;
+    }
+
+
 }
+
 .img-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
+
     @media screen and (max-width: 992px) {
         grid-gap: 8px;
-      }
-    
+    }
+
     &-elem {
         height: 0;
         padding-bottom: 100%;
         position: relative;
         border-radius: 8px;
         overflow: hidden;
+
         img {
             position: absolute;
         }
+    }
+}
+
+.tab-section {
+    @media screen and (min-width: 993px) {
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+}
+
+.vacancies-elem {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &-head {
+        margin-bottom: 16px;
     }
 }

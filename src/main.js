@@ -22,9 +22,32 @@ $(document).ready(function () {
     $(this).children('img').toggle();
   });
   footerAccordion(); // запуск при загрузке
+  // about us page
+  $('.side-menu-elem').click(function () {
+   $('.side-menu-elem').removeClass('active');
+   $(this).addClass('active');
+   const index = $(this).index(); // ← индекс нажатого элемента
+     // Сначала плавно скрываем всё
+    $('.tab-section:visible').fadeOut(200, function () {
+        // После скрытия показываем нужную вкладку
+        $('.tab-section').eq(index).fadeIn(200);
+    });
+  });
+  $('.tab-head').click(function () {
+  //  $('.side-menu-elem').removeClass('active');
+     $('.tab-head').removeClass('active');
+   $(this).addClass('active');
+
+   $(this).next('.tab-content').slideToggle();
+   
+  });
+  $(".tab-content:not(:first)").hide(); // скрыть все, кроме первой
+  $(".tab-content").first().show();     // на всякий случай явно показать первую
+
 });
 $(window).on("resize", function () {
   footerAccordion(); // запуск при изменении размера
+  aboutUsAccordions();
 });
 function footerAccordion() {
   if (window.matchMedia("(max-width: 767px)").matches) {
@@ -43,6 +66,24 @@ function footerAccordion() {
     $(".acc-body").addClass("open");
 
     $(".footer-elem ._h5").off("click"); // чтобы не было дублей событий
+  }
+}
+function aboutUsAccordions() {
+  if (window.matchMedia("(max-width: 992px)").matches) {
+     $('.tab-head').removeClass('active');
+   $('.tab-head').first().addClass('active');
+
+    $(".tab-section").show();
+    $(".tab-content:not(:first)").hide(); // скрыть все, кроме первой
+    $(".tab-content").first().show();     // на всякий случай явно показать первую
+
+
+  } else {
+    $(".tab-content").show();
+    $('.side-menu-elem').removeClass('active');
+   $('.side-menu-elem').first().addClass('active');
+    $(".tab-section:not(:first)").hide(); // скрыть все, кроме первой
+    $(".tab-section").first().show();     // на всякий случай явно показать первую
   }
 }
 // let countersSec = $(".counters-section");
