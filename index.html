@@ -1,230 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>MEDICA</title>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap"
-    rel="stylesheet" />
-  <title>MEDICA</title>
-</head>
+  <body>
+    <div class="container-all">
+      <div class="window-overlay"></div>
+      <header class="header _flex-x">
+        <div class="header__container _flex-btwn"></div>
+      </header>
+      <div class="mobile-menu _mob-f _flex-col-cntr" style="display: none">
+        <ul id="" class="mob-menu list-norm">
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Platform</a>
+            <ul class="sub-menu _flex-col list-norm">
+              <li
+                id="menu-item-15487"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15487"
+              >
+                <a href="#">For Buyers</a>
+              </li>
+              <li
+                id="menu-item-15476"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15476"
+              >
+                <a href="#">For Suppliers</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Info</a>
+            <ul class="sub-menu _flex-col list-norm">
+              <li class="menu-item">
+                <a href="#">About Us</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">News</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Help center</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
-<body>
-  <div class="container-all">
-    <div class="window-overlay"></div>
-    <header class="header _flex-x">
-      <div class="header__container _flex-btwn"></div>
-    </header>
-    <div class="mobile-menu _mob-f _flex-col-cntr" style="display: none;">
-      <ul id="" class="mob-menu list-norm">
-        <li class="menu-item menu-item-has-children">
-          <a href="#">Platform</a>
-          <ul class="sub-menu _flex-col list-norm">
-            <li id="menu-item-15487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15487">
-              <a href="#">For Buyers</a>
-            </li>
-            <li id="menu-item-15476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15476">
-              <a href="#">For Suppliers</a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-item menu-item-has-children">
-          <a href="#">Info</a>
-          <ul class="sub-menu _flex-col list-norm">
-            <li class="menu-item">
-              <a href="#">About Us</a>
-            </li>
-            <li class="menu-item">
-              <a href="#">News</a>
-            </li>
-            <li class="menu-item">
-              <a href="#">Help center</a>
-            </li>
-            <li class="menu-item">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-
-      <ul class="lang-switch _flex-x list-norm">
-        <li class="lang-item current-lang lang-item-first">
-          <a href="#">de</a>
-        </li>
-        <li class="lang-item">
-          <a href="#">en</a>
-        </li>
-      </ul>
-      <div class="soc-wrap _flex-x">
-        <a class="soc-elem" href="https://www.facebook.com/balkanprohealthmd">
-          <img src="img/icons/linkedin.svg" alt="" />
-        </a>
-        <a class="soc-elem" href="https://www.instagram.com/balkanprohealth">
-          <img src="img/icons/youtube.svg" alt="" />
-        </a>
-      </div>
-    </div>
-    <!--  style="display: none;"-->
-    <main>
-      <!-- <div class="header-space"></div> -->
-
-      <section class="inner-page pt72">
-        <div class="inner-page__container">
-          <div class="inner-page-title">
-            <h1 class="_d-blue">Despre noi</h1>
-          </div>
-          <div class="inner-page-wrap _flex">
-            <div class="col-sidebar _desk">
-              <div class="side-menu">
-                <div class="side-menu-elem card _flex-x active">
-                  <h6>Cine suntem?</h6>
-                </div>
-                <div class="side-menu-elem card _flex-x">
-                  <h6>Galerie foto</h6>
-                </div>
-                <div class="side-menu-elem card _flex-x">
-                  <h6>Cariere</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-main">
-              <div class="tab-section">
-                <div class="the-content">
-                  <p>Balkan Medica este o rețea de centre medicale private din Republica Moldova, care oferă servicii de
-                    diagnostic de laborator, consultații medicale de specialitate și pachete de analize adaptate
-                    nevoilor
-                    fiecărui pacient.</p>
-                  <p>Balkan Medica este o rețea <b>de centre medicale private</b> din Republica Moldova, care oferă
-                    servicii de diagnostic de laborator, consultații medicale de specialitate și pachete de analize
-                    adaptate nevoilor fiecărui pacient.</p>
-                  <p>Balkan Medica este o rețea de centre medicale private din Republica Moldova, care oferă servicii de
-                    diagnostic de laborator, consultații medicale de specialitate și pachete de analize adaptate
-                    nevoilor
-                    fiecărui pacient.</p>
-                  <p>Balkan Medica este o rețea de centre medicale private din Republica Moldova, care oferă servicii de
-                    diagnostic de laborator, consultații medicale de specialitate și pachete de analize adaptate
-                    nevoilor
-                    fiecărui pacient.</p>
-                  <ul>
-                    <li>Balkan Medica este o rețea de centre medicale private</li>
-                    <li>Republica Moldova</li>
-                    <li>de specialitate și pachete de analize adaptate nevoilor fiecărui pacient.</li>
-                    <li>de diagnostic de laborator</li>
-                  </ul>
-                  <img src="img/f10.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
+        <ul class="lang-switch _flex-x list-norm">
+          <li class="lang-item current-lang lang-item-first">
+            <a href="#">de</a>
+          </li>
+          <li class="lang-item">
+            <a href="#">en</a>
+          </li>
+        </ul>
+        <div class="soc-wrap _flex-x">
+          <a class="soc-elem" href="https://www.facebook.com/balkanprohealthmd">
+            <img src="img/icons/linkedin.svg" alt="" />
+          </a>
+          <a class="soc-elem" href="https://www.instagram.com/balkanprohealth">
+            <img src="img/icons/youtube.svg" alt="" />
+          </a>
         </div>
-      </section>
+      </div>
+      <!--  style="display: none;"-->
+      <main>
+        <!-- <div class="header-space"></div> -->
 
-    </main>
+        <section class="inner-page pt72 pb120">
+          <div class="inner-page__container">
+            <div class="inner-page-title">
+              <h1 class="_d-blue">Despre noi</h1>
+            </div>
+            <div class="inner-page-wrap _flex">
+              <div class="col-sidebar _desk">
+                <div class="side-menu">
+                  <div class="side-menu-elem card _flex-x active">
+                    <h6>Cine suntem?</h6>
+                  </div>
+                  <div class="side-menu-elem card _flex-x">
+                    <h6>Galerie foto</h6>
+                  </div>
+                  <div class="side-menu-elem card _flex-x">
+                    <h6>Cariere</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-main">
+                <div class="tab-section" style="display: none">
+                  <div class="tab-head _flex-btwn _mob-f active">
+                    <h6 class="_d-blue">Cine suntem?</h6>
+                    <img class="icon" src="img/icons/shevron-up.svg" alt="" />
+                  </div>
+                  <div class="tab-content text-editor">
+                    <h2>Cariere</h2>
+                    <p>
+                      Balkan Medica este o rețea de centre medicale private din
+                      Republica Moldova, care oferă servicii de diagnostic de
+                      laborator, consultații medicale de specialitate și pachete
+                      de analize adaptate nevoilor fiecărui pacient.
+                    </p>
+                    <p>
+                      Balkan Medica este o rețea
+                      <b>de centre medicale private</b> din Republica Moldova,
+                      care oferă servicii de diagnostic de laborator,
+                      consultații medicale de specialitate și pachete de analize
+                      adaptate nevoilor fiecărui pacient.
+                    </p>
+                    <p>
+                      Balkan Medica este o rețea de centre medicale private din
+                      Republica Moldova, care oferă servicii de diagnostic de
+                      laborator, consultații medicale de specialitate și pachete
+                      de analize adaptate nevoilor fiecărui pacient.
+                    </p>
+                    <p>
+                      Balkan Medica este o rețea de centre medicale private din
+                      Republica Moldova, care oferă servicii de diagnostic de
+                      laborator, consultații medicale de specialitate și pachete
+                      de analize adaptate nevoilor fiecărui pacient.
+                    </p>
+                    <ul>
+                      <li>
+                        Balkan Medica este o rețea de centre medicale private
+                      </li>
+                      <li>Republica Moldova</li>
+                      <li>
+                        de specialitate și pachete de analize adaptate nevoilor
+                        fiecărui pacient.
+                      </li>
+                      <li>de diagnostic de laborator</li>
+                    </ul>
+                    <img src="img/f10.png" alt="" />
+                  </div>
+                </div>
+                <div class="tab-section">
+                  <div class="tab-head _flex-btwn _mob-f active">
+                    <h6 class="_d-blue">Galerie foto</h6>
+                    <img class="icon" src="img/icons/shevron-up.svg" alt="" />
+                  </div>
+                  <div class="tab-content">
+                    <div class="text-editor">
+                      <p>
+                        Balkan Medica este o rețea de centre medicale private
+                        din Republica Moldova, care oferă servicii de diagnostic
+                        de laborator, consultații medicale de specialitate și
+                        pachete de analize adaptate nevoilor fiecărui pacient.
+                      </p>
+                      <p>
+                        Balkan Medica este o rețea
+                        <b>de centre medicale private</b> din Republica Moldova,
+                        care oferă servicii de diagnostic de laborator,
+                        consultații medicale de specialitate și pachete de
+                        analize adaptate nevoilor fiecărui pacient.
+                      </p>
+                    </div>
+                    <div class="img-grid pt60">
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall1.png" alt="" />
+                      </div>
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall2.png" alt="" />
+                      </div>
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall3.png" alt="" />
+                      </div>
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall1.png" alt="" />
+                      </div>
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall2.png" alt="" />
+                      </div>
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall3.png" alt="" />
+                      </div>
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall1.png" alt="" />
+                      </div>
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall2.png" alt="" />
+                      </div>
+                      <div class="img-grid-elem">
+                        <img class="icon o-fit" src="img/gall3.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer--main _flex">
-          <div class="footer-col">
-            <a class="footer-logo" href="">
-              <img src="img/logo.svg" alt="" />
-            </a>
-            <p class="_txt-semi _white foot-txt">
-              Ecografia este o tehnică imagistică non-invazivă, care
-              utilizează undele sonore.
-            </p>
-            <div class="soc-wrap _flex-x">
-              <img src="img/icons/fb.svg" alt="" />
-              <img src="img/icons/insta.svg" alt="" />
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer--main _flex">
+            <div class="footer-col">
+              <a class="footer-logo" href="">
+                <img src="img/logo.svg" alt="" />
+              </a>
+              <p class="_txt-semi _white foot-txt">
+                Ecografia este o tehnică imagistică non-invazivă, care
+                utilizează undele sonore.
+              </p>
+              <div class="soc-wrap _flex-x">
+                <img src="img/icons/fb.svg" alt="" />
+                <img src="img/icons/insta.svg" alt="" />
+              </div>
             </div>
-          </div>
-          <div class="footer-col">
-            <div class="footer-elem">
-              <h5 class="_h5 open _white">Pentru clienți</h5>
-              <ul class="acc-body open ul-norm _flex-col">
-                <li id="menu-item-14182"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14182">
-                  <a href="https://balkan.ro/magazin">Analize</a>
-                </li>
-                <li id="menu-item-14220"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14220">
-                  <a href="https://balkan.ro/promotii">Servicii</a>
-                </li>
-                <li id="menu-item-14186"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14186">
-                  <a href="https://balkan.ro/blog">Medici</a>
-                </li>
-                <li id="menu-item-14187"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14187">
-                  <a href="https://balkan.ro/livrare-si-retur">Promo​</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-col">
-            <div class="footer-elem">
-              <h5 class="_h5 open _white">Informație legală</h5>
-              <ul id="foot_menu_column_3" class="acc-body open ul-norm _flex-col">
-                <li id="menu-item-14188"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-14188">
-                  <a rel="privacy-policy" href="https://balkan.ro/privacy-policy">Politica de confidențialitate</a>
-                </li>
-                <li id="menu-item-14189"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14189">
-                  <a href="https://balkan.ro/termeni-si-conditii">Termeni și condiții</a>
-                </li>
-                <li id="menu-item-14190"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14190">
-                  <a href="#">Despre noi</a>
-                </li>
-                <li id="menu-item-14191"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14191">
-                  <a href="https://balkan.ro/despre-cookies">Blog</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-col">
-            <div class="footer-elem">
-              <h5 class="_h5 open _white">Contacte</h5>
-              <div class="acc-body open">
-                <ul id="foot_menu_column_4" class="foot-menu-column-4 ul-norm _flex-col">
-                  <li id="menu-item-14192"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192">
-                    <a href="https://balkan.ro/despre-noi">Despre noi</a>
+            <div class="footer-col">
+              <div class="footer-elem">
+                <h5 class="_h5 open _white">Pentru clienți</h5>
+                <ul class="acc-body open ul-norm _flex-col">
+                  <li
+                    id="menu-item-14182"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14182"
+                  >
+                    <a href="https://balkan.ro/magazin">Analize</a>
                   </li>
-                  <li id="menu-item-14192"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192">
-                    <a href="https://balkan.ro/despre-noi">Locațiile noastre</a>
+                  <li
+                    id="menu-item-14220"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14220"
+                  >
+                    <a href="https://balkan.ro/promotii">Servicii</a>
                   </li>
-                  <li id="menu-item-14192"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192">
-                    or. Chișinău str. Nicolae Testemițanu 29/4
+                  <li
+                    id="menu-item-14186"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14186"
+                  >
+                    <a href="https://balkan.ro/blog">Medici</a>
                   </li>
-                  <li id="menu-item-14192"
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192">
-                    <a href="https://balkan.ro/despre-noi">+373 (22) 89-09-30</a>
+                  <li
+                    id="menu-item-14187"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14187"
+                  >
+                    <a href="https://balkan.ro/livrare-si-retur">Promo​</a>
                   </li>
                 </ul>
               </div>
             </div>
+            <div class="footer-col">
+              <div class="footer-elem">
+                <h5 class="_h5 open _white">Informație legală</h5>
+                <ul
+                  id="foot_menu_column_3"
+                  class="acc-body open ul-norm _flex-col"
+                >
+                  <li
+                    id="menu-item-14188"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-14188"
+                  >
+                    <a
+                      rel="privacy-policy"
+                      href="https://balkan.ro/privacy-policy"
+                      >Politica de confidențialitate</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-14189"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14189"
+                  >
+                    <a href="https://balkan.ro/termeni-si-conditii"
+                      >Termeni și condiții</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-14190"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14190"
+                  >
+                    <a href="#">Despre noi</a>
+                  </li>
+                  <li
+                    id="menu-item-14191"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14191"
+                  >
+                    <a href="https://balkan.ro/despre-cookies">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-col">
+              <div class="footer-elem">
+                <h5 class="_h5 open _white">Contacte</h5>
+                <div class="acc-body open">
+                  <ul
+                    id="foot_menu_column_4"
+                    class="foot-menu-column-4 ul-norm _flex-col"
+                  >
+                    <li
+                      id="menu-item-14192"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"
+                    >
+                      <a href="https://balkan.ro/despre-noi">Despre noi</a>
+                    </li>
+                    <li
+                      id="menu-item-14192"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"
+                    >
+                      <a href="https://balkan.ro/despre-noi"
+                        >Locațiile noastre</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-14192"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"
+                    >
+                      or. Chișinău str. Nicolae Testemițanu 29/4
+                    </li>
+                    <li
+                      id="menu-item-14192"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"
+                    >
+                      <a href="https://balkan.ro/despre-noi"
+                        >+373 (22) 89-09-30</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer--copyright _flex-cntr">
+            <span class="copyright-txt _txt _white">© 2025 Balkan Medica</span>
           </div>
         </div>
-        <div class="footer--copyright _flex-cntr">
-          <span class="copyright-txt _txt _white">© 2025 Balkan Medica</span>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="/src/scrollCue.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      </footer>
+    </div>
+    <script src="/src/scrollCue.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="/src/main.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
