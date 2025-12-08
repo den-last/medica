@@ -647,7 +647,10 @@ p a:hover {
     background-color: $mediumblue;
     padding: 0 40px;
     gap: 11px;
-
+    @media screen and (max-width: 992px) {
+      height: 32px;
+      padding: 0 16px;
+    }
     &:hover {
       transition: 0.3s;
       background-color: $darkblue;
@@ -663,6 +666,12 @@ p a:hover {
       min-width: auto;
       background-color: transparent;
     }
+    svg {
+      @media screen and (max-width: 992px) {
+        width: 10px;
+      }
+    }
+    
     svg path {
       fill: #ffffff;
       transition: all ease 0.3s;
