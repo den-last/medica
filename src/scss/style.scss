@@ -1245,6 +1245,13 @@ p a:hover {
     padding-bottom: 60px;
   }
 }
+.pt72 {
+  padding-top: 72px;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 28px;
+  }
+}
 
 .pt60 {
   padding-top: 60px;

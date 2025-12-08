@@ -1,0 +1,39 @@
+.inner-page {
+    &-title {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &-wrap {
+        gap: 33px;
+    }
+
+    .col-sidebar {
+        width: 350px;
+        min-width: 350px;
+    }
+
+    .side-menu {
+        &-elem {
+            min-height: 60px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            transition: .3s;
+
+            &.active {
+                background-color: $lightblue40;
+                transition: .3s;
+
+                h6 {
+                    color: $mediumblue;
+                    transition: .3s;
+
+                }
+            }
+        }
+    }
+}
