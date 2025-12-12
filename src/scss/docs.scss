@@ -5,28 +5,35 @@
         overflow: hidden;
         height: 0;
         padding-bottom: 114%;
+
         @media screen and (max-width: 1499px) {
             border-radius: 16px;
         }
-@media screen and (max-width: 767px) {
+
+        @media screen and (max-width: 767px) {
             border-radius: 8px;
         }
+
         img {
             position: absolute;
         }
+
         .bttn-border {
             position: absolute;
             right: 24px;
             bottom: 24px;
             z-index: 2;
+
             @media screen and (max-width: 767px) {
-            right: 8px;
-            bottom: 8px;
-        }
+                right: 8px;
+                bottom: 8px;
+            }
         }
     }
+
     .txt-wrap {
         margin-top: 24px;
+
         @media screen and (max-width: 767px) {
             margin-top: 16px;
         }
@@ -34,9 +41,37 @@
         h4 {
             text-align: center;
         }
+
         .specialty {
             display: block;
             text-align: center;
+        }
+    }
+}
+
+.docs-wrap {}
+
+.doc-entry-elem {
+    padding: 40px 0;
+    border-bottom: 1px solid $lightgray;
+
+    .doc-entry-col {
+        &.img {
+            width: 34.5%;
+            min-width: 34.5%;
+        }
+    }
+
+    .img-wrap {
+        width: 100%;
+        height: 0;
+        padding-bottom: 114%;
+        position: relative;
+        border-radius: 24px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
         }
     }
 }

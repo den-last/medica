@@ -45,13 +45,16 @@
     }
   }
 }
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 60px 40px;
+
   @media screen and (max-width: 1499px) {
     grid-gap: 20px;
   }
+
   @media screen and (max-width: 1199px) {
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -63,8 +66,10 @@
     }
   }
 }
+
 .contact-card {
   height: max-content;
+
   @media screen and (max-width: 599px) {
     flex-direction: column;
     gap: 24px;
@@ -79,51 +84,62 @@
     padding-bottom: 42.5%;
     border-radius: 8px;
     overflow: hidden;
+
     @media screen and (max-width: 599px) {
       width: 100%;
       min-width: auto;
       padding-bottom: 90%;
     }
+
     img {
       position: absolute;
     }
   }
+
   .txt-wrap {
     flex-grow: 1;
     gap: 40px;
     padding-left: 40px;
     padding-top: 32px;
     justify-content: space-between;
+
     @media screen and (max-width: 1499px) {
       gap: 20px;
       padding-left: 20px;
       padding-top: 0px;
     }
+
     @media screen and (max-width: 599px) {
       padding-left: 0;
       gap: 32px;
     }
   }
+
   .contact-elems-wrap {
     gap: 16px;
-    .contact-elem {
-      align-items: flex-start;
-      gap: 3px;
-      @media screen and (max-width: 599px) {
-        gap: 8px;
-      }
-      h5 {
-        @media screen and (max-width: 992px) {
-            color: $mediumblue;
-          }
-      }
-      img {
-        position: relative;
-        top: 3px;
-        @media screen and (max-width: 599px) {
-          top: -4px;
-        }
-      }
+  }
+}
+
+.contact-elem {
+  align-items: flex-start;
+  gap: 3px;
+
+  @media screen and (max-width: 599px) {
+    gap: 8px;
+  }
+
+  h5 {
+    @media screen and (max-width: 992px) {
+      color: $mediumblue;
+    }
+  }
+
+  img {
+    position: relative;
+    top: 3px;
+
+    @media screen and (max-width: 599px) {
+      top: -4px;
     }
   }
 }
