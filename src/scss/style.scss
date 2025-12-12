@@ -6,7 +6,7 @@ $lightgray: #d6d8dd;
 
 $lightblue20: #f4fbff;
 $lightblue40: #ccedff;
-$lightblue50: #E0F4FF;
+$lightblue50: #e0f4ff;
 // $blue: #00529A;
 $mediumblue: #00529a;
 $darkblue: #0a1948;
@@ -175,7 +175,7 @@ h6,
     line-height: 1.625;
 
     @media screen and (max-width: 992px) {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 }
@@ -651,6 +651,11 @@ p a:hover {
       height: 32px;
       padding: 0 16px;
     }
+    ._txt-semi {
+      @media screen and (max-width: 992px) {
+        font-size: 12px;
+      }
+    }
     &:hover {
       transition: 0.3s;
       background-color: $darkblue;
@@ -671,7 +676,7 @@ p a:hover {
         width: 10px;
       }
     }
-    
+
     svg path {
       fill: #ffffff;
       transition: all ease 0.3s;
@@ -706,8 +711,45 @@ p a:hover {
     }
 
     &:hover {
-      >.arr-elem {
+      > .arr-elem {
         background-color: $mediumblue;
+      }
+    }
+    &-light {
+      gap: 16px;
+      transition: all ease 0.3s;
+
+      @media screen and (max-width: 992px) {
+        gap: 8px;
+      }
+
+      .arr-elem {
+        background-color: $lightblue40;
+
+        svg {
+          @media screen and (max-width: 992px) {
+            width: 50%;
+          }
+        }
+      }
+
+      ._txt-semi {
+        color: $black;
+      }
+
+      svg path {
+        fill: $mediumblue;
+        transition: all ease 0.3s;
+      }
+
+      &:hover {
+        > .arr-elem {
+          background-color: $mediumblue;
+          svg path {
+            fill: $white;
+            transition: all ease 0.3s;
+          }
+        }
       }
     }
   }
@@ -740,7 +782,7 @@ p a:hover {
     }
 
     &:hover {
-      >.arr-elem {
+      > .arr-elem {
         background-color: $black;
       }
 
@@ -750,7 +792,39 @@ p a:hover {
       }
     }
   }
+  &-border-long {
+    transition: all ease 0.3s;
+    min-width: 160px;
+    border: 1px solid $mediumblue;
+    height: 44px;
+    border-radius: 32px;
+    background-color: transparent;
+    padding: 5px 40px;
 
+    // @media screen and (max-width: 992px) {
+    //   gap: 8px;
+    // }
+
+    // ._txt-semi {
+    //   color: $black;
+    // }
+
+    // svg path {
+    //   fill: $black;
+    //   transition: all ease 0.3s;
+    // }
+
+    &:hover {
+      border: 1px solid $lightblue40;
+      background-color: $lightblue40;
+      transition: all ease 0.3s;
+    }
+    &.active {
+      border: 1px solid $lightblue40;
+      background-color: $lightblue40;
+      transition: all ease 0.3s;
+    }
+  }
   // @media screen and (max-width: 992px) {
   //     padding: 12px 28px;
   // }
@@ -949,8 +1023,6 @@ p a:hover {
   //     }
   // }
 }
-
-
 
 // .bttn-white:hover::after {
 //     opacity: 1;
@@ -1186,12 +1258,12 @@ p a:hover {
 }
 
 .img-wrap a img {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .img-wrap:hover a img {
   transform: scale(1.02);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .rad-32-8 {

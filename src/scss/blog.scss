@@ -14,10 +14,13 @@
         opacity: 1;
         filter: brightness(0) invert(1);
     }
+    .blog-card {
+        background: $white;
+    }    
 }
 
 .blog-card {
-    background: $white;
+    // background: $white;
 
     @media screen and (max-width: 992px) {
         border-radius: 16px;
@@ -72,4 +75,24 @@
             // }
         }
     }
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    @media screen and (max-width: 1499px) {
+        grid-gap: 20px;
+    }
+    @media screen and (max-width: 992px) {
+        grid-gap: 50px 15px;
+    }
+    @media screen and (max-width: 767px) {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+
+    }
+
 }

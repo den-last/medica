@@ -1,49 +1,50 @@
-import './style.css';
-import './style.scss';
+import "./style.css";
+import "./style.scss";
 
 // console.log(newsSwiperClass);
 scrollCue.init();
 $(document).ready(function () {
   // scrollCue.init();
   scrollCue.update();
-  $('.menu-item-has-children').hover(
+  $("[data-fancybox]").fancybox({
+    // можно добавить опции
+});
+  $(".menu-item-has-children").hover(
     function () {
-      $(this).children('a').addClass('active');
-      $(this).children('ul.sub-menu').removeClass('_hide');
+      $(this).children("a").addClass("active");
+      $(this).children("ul.sub-menu").removeClass("_hide");
     },
     function () {
-      $(this).children('a').removeClass('active');
-      $(this).children('ul.sub-menu').addClass('_hide');
+      $(this).children("a").removeClass("active");
+      $(this).children("ul.sub-menu").addClass("_hide");
     }
   );
-  $('.mob-menu-start').click(function () {
-    $('.window-overlay').toggleClass('open');
-    $('.mobile-menu').toggleClass('open');
-    $(this).children('img').toggle();
+  $(".mob-menu-start").click(function () {
+    $(".window-overlay").toggleClass("open");
+    $(".mobile-menu").toggleClass("open");
+    $(this).children("img").toggle();
   });
   footerAccordion(); // запуск при загрузке
   // about us page
-  $('.side-menu-elem').click(function () {
-   $('.side-menu-elem').removeClass('active');
-   $(this).addClass('active');
-   const index = $(this).index(); // ← индекс нажатого элемента
-     // Сначала плавно скрываем всё
-    $('.tab-section:visible').fadeOut(200, function () {
-        // После скрытия показываем нужную вкладку
-        $('.tab-section').eq(index).fadeIn(200);
+  $(".aboutTab").click(function () {
+    $(".aboutTab").removeClass("active");
+    $(this).addClass("active");
+    const index = $(this).index(); // ← индекс нажатого элемента
+    // Сначала плавно скрываем всё
+    $(".tab-section:visible").fadeOut(200, function () {
+      // После скрытия показываем нужную вкладку
+      $(".tab-section").eq(index).fadeIn(200);
     });
   });
-  $('.tab-head').click(function () {
-  //  $('.side-menu-elem').removeClass('active');
-     $('.tab-head').removeClass('active');
-   $(this).addClass('active');
-
-   $(this).next('.tab-content').slideToggle();
-   
+  $(".tab-head").click(function () {
+    //  $('.tab-head').removeClass('active');
+    $(this).toggleClass("active");
+    $(this).next(".tab-content").slideToggle();
   });
-  $(".tab-content:not(:first)").hide(); // скрыть все, кроме первой
-  $(".tab-content").first().show();     // на всякий случай явно показать первую
-
+  if (window.matchMedia("(max-width: 992px)").matches) {
+    $(".tab-content:not(:first)").hide(); // скрыть все, кроме первой
+    $(".tab-content").first().show(); // на всякий случай явно показать первую
+  }
 });
 $(window).on("resize", function () {
   footerAccordion(); // запуск при изменении размера
@@ -51,17 +52,16 @@ $(window).on("resize", function () {
 });
 function footerAccordion() {
   if (window.matchMedia("(max-width: 767px)").matches) {
-
     $(".footer-elem ._h5").removeClass("open");
     $(".acc-body").removeClass("open");
 
-    $(".footer-elem ._h5").off("click").on("click", function () {
-      $(this).toggleClass("open");
-      $(this).next(".acc-body").toggleClass("open");
-    });
-
+    $(".footer-elem ._h5")
+      .off("click")
+      .on("click", function () {
+        $(this).toggleClass("open");
+        $(this).next(".acc-body").toggleClass("open");
+      });
   } else {
-
     $(".footer-elem ._h5").addClass("open");
     $(".acc-body").addClass("open");
 
@@ -70,20 +70,17 @@ function footerAccordion() {
 }
 function aboutUsAccordions() {
   if (window.matchMedia("(max-width: 992px)").matches) {
-     $('.tab-head').removeClass('active');
-   $('.tab-head').first().addClass('active');
-
+    $(".tab-head").removeClass("active");
+    $(".tab-head").first().addClass("active");
     $(".tab-section").show();
     $(".tab-content:not(:first)").hide(); // скрыть все, кроме первой
-    $(".tab-content").first().show();     // на всякий случай явно показать первую
-
-
+    $(".tab-content").first().show(); // на всякий случай явно показать первую
   } else {
     $(".tab-content").show();
-    $('.side-menu-elem').removeClass('active');
-   $('.side-menu-elem').first().addClass('active');
+    $(".aboutTab").removeClass("active");
+    $(".aboutTab").first().addClass("active");
     $(".tab-section:not(:first)").hide(); // скрыть все, кроме первой
-    $(".tab-section").first().show();     // на всякий случай явно показать первую
+    $(".tab-section").first().show(); // на всякий случай явно показать первую
   }
 }
 // let countersSec = $(".counters-section");
@@ -93,19 +90,18 @@ $(document).scroll(function () {
       // .removeClass("header-transparent")
       .addClass("header-fixed");
   } else {
-    $(".header")
-      .removeClass("header-fixed")
+    $(".header").removeClass("header-fixed");
     // .addClass("header-transparent");
   }
 });
-const swiperPromo = new Swiper('.swiperPromo', {
-slidesPerView: 2,
+const swiperPromo = new Swiper(".swiperPromo", {
+  slidesPerView: 2,
   pagination: {
-    el: '.promoPagination',
+    el: ".promoPagination",
   },
   navigation: {
-    nextEl: '.promoNext',
-    prevEl: '.promoPrev',
+    nextEl: ".promoNext",
+    prevEl: ".promoPrev",
   },
   breakpoints: {
     320: {
@@ -118,16 +114,14 @@ slidesPerView: 2,
       spaceBetween: 40,
     },
   },
-
 });
-const swiperDocs = new Swiper('.swiperDocs', {
-
+const swiperDocs = new Swiper(".swiperDocs", {
   pagination: {
-    el: '.docsPagination',
+    el: ".docsPagination",
   },
   navigation: {
-    nextEl: '.docsNext',
-    prevEl: '.docsPrev',
+    nextEl: ".docsNext",
+    prevEl: ".docsPrev",
   },
   breakpoints: {
     320: {
@@ -143,16 +137,14 @@ const swiperDocs = new Swiper('.swiperDocs', {
       slidesPerView: 4,
     },
   },
-
 });
-const swiperBlog = new Swiper('.swiperBlog', {
-
+const swiperBlog = new Swiper(".swiperBlog", {
   pagination: {
-    el: '.blogPagination',
+    el: ".blogPagination",
   },
   navigation: {
-    nextEl: '.blogNext',
-    prevEl: '.blogPrev',
+    nextEl: ".blogNext",
+    prevEl: ".blogPrev",
   },
   breakpoints: {
     320: {
@@ -168,17 +160,15 @@ const swiperBlog = new Swiper('.swiperBlog', {
       slidesPerView: 3,
     },
   },
-
 });
 
-const swiperTests = new Swiper('.swiperTests', {
-
+const swiperTests = new Swiper(".swiperTests", {
   pagination: {
-    el: '.testsPagination',
+    el: ".testsPagination",
   },
   navigation: {
-    nextEl: '.testsNext',
-    prevEl: '.testsPrev',
+    nextEl: ".testsNext",
+    prevEl: ".testsPrev",
   },
   breakpoints: {
     320: {
@@ -187,16 +177,15 @@ const swiperTests = new Swiper('.swiperTests', {
     },
     481: {
       spaceBetween: 12,
-      slidesPerView:3,
+      slidesPerView: 3,
     },
     768: {
       spaceBetween: 12,
-      slidesPerView:4,
+      slidesPerView: 4,
     },
     993: {
       spaceBetween: 40,
       slidesPerView: 3,
     },
   },
-
 });
