@@ -1,5 +1,6 @@
 $white: #ffffff;
 $black: #464953;
+$head: #17181C;
 $accent: #0099cd;
 
 $lightgray: #d6d8dd;
@@ -745,6 +746,43 @@ p a:hover {
       &:hover {
         > .arr-elem {
           background-color: $mediumblue;
+          svg path {
+            fill: $white;
+            transition: all ease 0.3s;
+          }
+        }
+      }
+    }
+    &-medium {
+      gap: 16px;
+      transition: all ease 0.3s;
+
+      @media screen and (max-width: 992px) {
+        gap: 8px;
+      }
+
+      .arr-elem {
+        background-color: $mediumblue;
+
+        svg {
+          @media screen and (max-width: 992px) {
+            width: 50%;
+          }
+        }
+      }
+
+      ._txt-semi {
+        color: $black;
+      }
+
+      svg path {
+        fill: $white;
+        transition: all ease 0.3s;
+      }
+
+      &:hover {
+        > .arr-elem {
+          background-color: $darkblue;
           svg path {
             fill: $white;
             transition: all ease 0.3s;

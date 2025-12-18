@@ -21,6 +21,11 @@
   .col-sidebar {
     width: 350px;
     min-width: 350px;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      min-width: auto;
+      }
+
   }
 
   .col-main {
@@ -175,10 +180,17 @@
   padding-top: 16px;
   padding-bottom: 16px;
   margin-bottom: 40px;
+  gap: 16px;
   @media screen and (max-width: 992px) {
     margin-bottom: 24px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+    .bttn-border-long {
+      @media screen and (max-width: 1279px) {
+        min-width: 100px;
+        padding: 5px 15px;  
+      }
   }
 }
 .entry {
