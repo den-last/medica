@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+
+    <title>MEDICA Analize</title>
+  <link rel="stylesheet"  href="assets/index-D1FzmUT4.css">
+
+  </head>
+
+  <body>
+    <div class="container-all">
+      <div class="window-overlay"></div>
+    <header class="header header-default">
+      <div class="header__container">
+        <div class="header-desk _desk">
+          <div class="row main _flex-btwn">
+            <a class="header-logo" href="">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <div class="col _flex-x">
+              <a class="icon-txt _flex-x" href="tel:37379700500">
+                <img class="icon" src="img/icons/phone-wt.svg" alt="" />
+                <span class="txt _h6 _white">+373 (78) 90-39-03</span>
+              </a>
+              <div class="header-search">
+                <input type="search" name="" id="" class="_input" />
+              </div>
+            </div>
+            <div class="col _flex-x">
+              <div class="icons-wrap _flex-x">
+                <div class="location">
+                  <div class="location-inner">
+                    <div class="loc-icon-wrap _flex-cntr">
+                      <img class="icon" src="img/icons/location-bl.svg" alt="" />
+                    </div>
+                    <div class="loc-dropdown">
+                      <h6 class="_blue">Alege orașul</h6>
+                      <div class="bttn-wrap _flex-col">
+                        <a href="#" class="bttn bttn-border-long active">
+                          <span class="_txt-semi">Chișinău</span>
+                        </a>
+                        <a href="#" class="bttn bttn-border-long">
+                          <span class="_txt-semi">Orhei</span>
+                        </a>
+                        <a href="#" class="bttn bttn-border-long">
+                          <span class="_txt-semi">Cahul</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-link">
+                  <div class="icon-wrap" id="desktop-cart">
+                    <img class="icon" src="img/icons/Cart-wt.svg" alt="" />
+                    <div class="num">1</div>
+                  </div>
+                </div>
+                <div class="lang-switch-wrap">
+                  <ul class="lang-switch ul-norm">
+                    <div class="dropdown">
+                      <li class="lang-item lang-item-394 lang-item-ro lang-item-first">
+                        <a lang="ro-RO" hreflang="ro-RO" href="#">ro</a>
+                      </li>
+                    </div>
+                    <li class="lang-item lang-item-397 lang-item-ru current-lang">
+                      <a lang="ru-RU" hreflang="ru-RU" href="#" aria-current="true">ru</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="bttn bttn-base">
+                <span class="_txt-semi">Programează-te</span>
+              </a>
+            </div>
+          </div>
+          <div class="row menu">
+            <ul id="head_menu_desk" class="menu1 _flex-x ul-norm">
+              <li class="menu-item menu-item-has-children"><a href="#">Servicii</a></li>
+              <li class="menu-item menu-item-has-children"><a href="#">Medici</a></li>
+              <li class="menu-item menu-item-has-children"><a href="#">Analize</a></li>
+              <li class="menu-item"><a href="#">Promo</a></li>
+              <li class="menu-item"><a href="#">Blog</a></li>
+              <li class="menu-item"><a href="#">Despre noi</a></li>
+              <li class="menu-item"><a href="#">Contacte</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header-mob _mob">
+          <div class="row main _flex-btwn">
+            <a class="header-logo" href="">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <div class="col _flex-x">
+              <a class="icon-txt _flex-x" href="tel:37379700500">
+                <img class="icon" src="img/icons/phone-wt.svg" alt="" />
+                <span class="txt _h6 _white">+373 (78) 90-39-03</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="row bottom _flex-btwn">
+            <div class="col _flex-x">
+              <div class="menu-start">
+                <img class="icon" src="img/icons/Menu-wt.svg" alt="" />
+              </div>
+              <div class="lang-switch-wrap">
+                <ul class="lang-switch ul-norm">
+                  <div class="dropdown">
+                    <li class="lang-item lang-item-394 lang-item-ro lang-item-first">
+                      <a lang="ro-RO" hreflang="ro-RO" href="#">ro</a>
+                    </li>
+                  </div>
+                  <li class="lang-item lang-item-397 lang-item-ru current-lang">
+                    <a lang="ru-RU" hreflang="ru-RU" href="#" aria-current="true">ru</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col _flex-x">
+              <div class="search-start">
+                <img class="icon" src="img/icons/Search-wt.svg" alt="" />
+              </div>
+              <div class="cart-link">
+                <div class="icon-wrap" id="desktop-cart">
+                  <img class="icon" src="img/icons/Cart-wt.svg" alt="" />
+                  <div class="num">1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu " style="display: none">
+      <ul id="" class="mob-menu list-norm"></ul>
+
+      <ul class="lang-switch _flex-x list-norm"></ul>
+      <div class="soc-wrap _flex-x"></div>
+    </div>
+      <!--  style="display: none;"-->
+      <main>
+        <div class="header-space"></div>
+
+        <section class="inner-page pt72 pb120">
+          <div class="inner-page__container">
+            <div class="inner-page-title">
+              <h1 class="_d-blue">Analize</h1>
+            </div>
+            <div class="inner-page-wrap catalog _flex">
+              <div class="col-sidebar">
+                <div class="side-menu">
+                  <div class="side-menu-elem card _flex-x active">
+                    <img src="img/icons/drop2.svg" alt="" class="" />
+                    <h6>Analize populare</h6>
+                  </div>
+                  <div class="side-menu-elem card _flex-x">
+                    <img src="img/icons/drop2.svg" alt="" class="" />
+                    <h6>Biochimia sângelui</h6>
+                  </div>
+                  <div class="side-menu-elem card _flex-x">
+                    <img src="img/icons/drop2.svg" alt="" class="" />
+                    <h6>Biochimia urinei</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-main">
+                <div class="city-choice card _flex-btwn _desk-f">
+                  <h4>Alege orașul</h4>
+                  <div class="bttn-wrap _flex-x">
+                    <a href="#" class="bttn bttn-border-long active">
+                      <span class="_txt-semi">Chișinău</span>
+                    </a>
+                    <a href="#" class="bttn bttn-border-long">
+                      <span class="_txt-semi">Orhei</span>
+                    </a>
+                    <a href="#" class="bttn bttn-border-long">
+                      <span class="_txt-semi">Cahul</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="city-choice _flex-btwn _mob-f">
+                  <a href="#" class="bttn bttn-arrow-light">
+                    <span class="arr-elem _flex-cntr">
+                      <svg  width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 10C21.5 10 22.5 9 22.5 7V5C22.5 3 21.5 2 19.5 2H17.5C15.5 2 14.5 3 14.5 5V7C14.5 9 15.5 10 17.5 10H19.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.5 22C9.5 22 10.5 21 10.5 19V17C10.5 15 9.5 14 7.5 14H5.5C3.5 14 2.5 15 2.5 17V19C2.5 21 3.5 22 5.5 22H7.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 10C4.29086 10 2.5 8.20914 2.5 6C2.5 3.79086 4.29086 2 6.5 2C8.70914 2 10.5 3.79086 10.5 6C10.5 8.20914 8.70914 10 6.5 10Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 22C16.2909 22 14.5 20.2091 14.5 18C14.5 15.7909 16.2909 14 18.5 14C20.7091 14 22.5 15.7909 22.5 18C22.5 20.2091 20.7091 22 18.5 22Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    </span>
+                    <span class="_txt-semi">Alte analize</span>
+                  </a>
+                  <div class="card city-select _flex-x">
+                    <div class="_txt-semi _blue">Chișinău</div>
+                    <img src="img/icons/shevron-down.svg" alt="" />
+                  </div>
+                </div>
+                <div class="entry-wrap _flex-col">
+                  <div class="entry-elem _flex-btwn">
+                    <div class="entry-col">
+                      <h5><a href="#">Acid uric</a></h5>
+                      <div class="desc">Cod: CH01</div>
+                    </div>
+                    <div class="entry-col _flex-x">
+                      <div class="price _h4">70 Lei</div>
+                      <a href="#" class="bttn bttn-arrow-light">
+                        <span class="arr-elem _flex-cntr">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.8804 19H12.3219C11.2603 19 10.3504 18.2255 10.1609 17.1471L8.42638 7.83333C8.38847 7.62745 8.20839 7.47059 7.99987 7.47059H6.71085C6.32225 7.47059 6 7.13725 6 6.73529C6 6.33333 6.32225 6 6.71085 6H8.00935C8.89081 6 9.65853 6.65686 9.82914 7.54902L11.5541 16.8725C11.6205 17.2549 11.9522 17.5294 12.3219 17.5294H22.8899C23.269 17.5294 23.5913 17.2549 23.6576 16.8725L24.5675 11.9412C24.6149 11.7059 24.5486 11.4608 24.4064 11.2745C24.2547 11.0882 24.0368 10.9804 23.7998 10.9804H14.1227C13.7341 10.9804 13.4118 10.6471 13.4118 10.2451C13.4118 9.84314 13.7341 9.5098 14.1227 9.5098H23.7998C24.4633 9.5098 25.0793 9.81373 25.4964 10.3333C25.9134 10.8627 26.084 11.549 25.9608 12.2157L25.0509 17.1471C24.8519 18.2255 23.942 19 22.8804 19Z" fill="#00529A"/>
+                            <path d="M12.5 26C11.12 26 10 24.88 10 23.5C10 22.12 11.12 21 12.5 21C13.88 21 15 22.12 15 23.5C15 24.88 13.88 26 12.5 26ZM12.5 22.5C11.95 22.5 11.5 22.95 11.5 23.5C11.5 24.05 11.95 24.5 12.5 24.5C13.05 24.5 13.5 24.05 13.5 23.5C13.5 22.95 13.05 22.5 12.5 22.5Z" fill="#00529A"/>
+                            <path d="M19.5 26C18.12 26 17 24.88 17 23.5C17 22.12 18.12 21 19.5 21C20.88 21 22 22.12 22 23.5C22 24.88 20.88 26 19.5 26ZM19.5 22.5C18.95 22.5 18.5 22.95 18.5 23.5C18.5 24.05 18.95 24.5 19.5 24.5C20.05 24.5 20.5 24.05 20.5 23.5C20.5 22.95 20.05 22.5 19.5 22.5Z" fill="#00529A"/>
+                            </svg>
+                        </span>
+                        <span class="_txt-semi _desk">Adaugă în coș</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="entry-elem _flex-btwn">
+                    <div class="entry-col">
+                      <h5><a href="#">Polen Phleum pratense (timoftica), IgE specific</a></h5>
+                      <div class="desc">Cod: CH01</div>
+                    </div>
+                    <div class="entry-col _flex-x">
+                      <div class="price _h4">70 Lei</div>
+                      <a href="#" class="bttn bttn-arrow-light">
+                        <span class="arr-elem _flex-cntr">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.8804 19H12.3219C11.2603 19 10.3504 18.2255 10.1609 17.1471L8.42638 7.83333C8.38847 7.62745 8.20839 7.47059 7.99987 7.47059H6.71085C6.32225 7.47059 6 7.13725 6 6.73529C6 6.33333 6.32225 6 6.71085 6H8.00935C8.89081 6 9.65853 6.65686 9.82914 7.54902L11.5541 16.8725C11.6205 17.2549 11.9522 17.5294 12.3219 17.5294H22.8899C23.269 17.5294 23.5913 17.2549 23.6576 16.8725L24.5675 11.9412C24.6149 11.7059 24.5486 11.4608 24.4064 11.2745C24.2547 11.0882 24.0368 10.9804 23.7998 10.9804H14.1227C13.7341 10.9804 13.4118 10.6471 13.4118 10.2451C13.4118 9.84314 13.7341 9.5098 14.1227 9.5098H23.7998C24.4633 9.5098 25.0793 9.81373 25.4964 10.3333C25.9134 10.8627 26.084 11.549 25.9608 12.2157L25.0509 17.1471C24.8519 18.2255 23.942 19 22.8804 19Z" fill="#00529A"/>
+                            <path d="M12.5 26C11.12 26 10 24.88 10 23.5C10 22.12 11.12 21 12.5 21C13.88 21 15 22.12 15 23.5C15 24.88 13.88 26 12.5 26ZM12.5 22.5C11.95 22.5 11.5 22.95 11.5 23.5C11.5 24.05 11.95 24.5 12.5 24.5C13.05 24.5 13.5 24.05 13.5 23.5C13.5 22.95 13.05 22.5 12.5 22.5Z" fill="#00529A"/>
+                            <path d="M19.5 26C18.12 26 17 24.88 17 23.5C17 22.12 18.12 21 19.5 21C20.88 21 22 22.12 22 23.5C22 24.88 20.88 26 19.5 26ZM19.5 22.5C18.95 22.5 18.5 22.95 18.5 23.5C18.5 24.05 18.95 24.5 19.5 24.5C20.05 24.5 20.5 24.05 20.5 23.5C20.5 22.95 20.05 22.5 19.5 22.5Z" fill="#00529A"/>
+                            </svg>
+                        </span>
+                        <span class="_txt-semi _desk">Adaugă în coș</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="entry-elem _flex-btwn">
+                    <div class="entry-col">
+                      <h5><a href="#">Acid uric</a></h5>
+                      <div class="desc">Cod: CH01</div>
+                    </div>
+                    <div class="entry-col _flex-x">
+                      <div class="price _h4">70 Lei</div>
+                      <a href="#" class="bttn bttn-arrow-light">
+                        <span class="arr-elem _flex-cntr">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.8804 19H12.3219C11.2603 19 10.3504 18.2255 10.1609 17.1471L8.42638 7.83333C8.38847 7.62745 8.20839 7.47059 7.99987 7.47059H6.71085C6.32225 7.47059 6 7.13725 6 6.73529C6 6.33333 6.32225 6 6.71085 6H8.00935C8.89081 6 9.65853 6.65686 9.82914 7.54902L11.5541 16.8725C11.6205 17.2549 11.9522 17.5294 12.3219 17.5294H22.8899C23.269 17.5294 23.5913 17.2549 23.6576 16.8725L24.5675 11.9412C24.6149 11.7059 24.5486 11.4608 24.4064 11.2745C24.2547 11.0882 24.0368 10.9804 23.7998 10.9804H14.1227C13.7341 10.9804 13.4118 10.6471 13.4118 10.2451C13.4118 9.84314 13.7341 9.5098 14.1227 9.5098H23.7998C24.4633 9.5098 25.0793 9.81373 25.4964 10.3333C25.9134 10.8627 26.084 11.549 25.9608 12.2157L25.0509 17.1471C24.8519 18.2255 23.942 19 22.8804 19Z" fill="#00529A"/>
+                            <path d="M12.5 26C11.12 26 10 24.88 10 23.5C10 22.12 11.12 21 12.5 21C13.88 21 15 22.12 15 23.5C15 24.88 13.88 26 12.5 26ZM12.5 22.5C11.95 22.5 11.5 22.95 11.5 23.5C11.5 24.05 11.95 24.5 12.5 24.5C13.05 24.5 13.5 24.05 13.5 23.5C13.5 22.95 13.05 22.5 12.5 22.5Z" fill="#00529A"/>
+                            <path d="M19.5 26C18.12 26 17 24.88 17 23.5C17 22.12 18.12 21 19.5 21C20.88 21 22 22.12 22 23.5C22 24.88 20.88 26 19.5 26ZM19.5 22.5C18.95 22.5 18.5 22.95 18.5 23.5C18.5 24.05 18.95 24.5 19.5 24.5C20.05 24.5 20.5 24.05 20.5 23.5C20.5 22.95 20.05 22.5 19.5 22.5Z" fill="#00529A"/>
+                            </svg>
+                        </span>
+                        <span class="_txt-semi _desk">Adaugă în coș</span>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="promo pb120">
+          <div class="promo__container">
+            <div class="section-head _flex-btwn pb40">
+              <h2 class="_h1 _d-blue">Pachete și Promoții</h2>
+              <a href="#" class="bttn bttn-arrow">
+                <span class="arr-elem _flex-cntr">
+                  <svg
+                    width="18"
+                    height="14"
+                    viewBox="0 0 18 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.5117 0.223714C10.81 -0.0745714 11.3043 -0.0745714 11.6025 0.223714L17.7734 6.39461C17.9173 6.53852 17.9999 6.73396 18 6.93953C18 7.14525 17.9174 7.34143 17.7734 7.48543L11.6025 13.6563C11.3043 13.9546 10.81 13.9546 10.5117 13.6563C10.2138 13.3581 10.2138 12.8647 10.5117 12.5665L15.3672 7.71102H0.771484C0.34977 7.71102 0 7.36125 0 6.93953C0.000213267 6.51799 0.349899 6.16805 0.771484 6.16805H15.3662L10.5117 1.31356C10.2137 1.01536 10.2138 0.521972 10.5117 0.223714Z"
+                    />
+                  </svg>
+                </span>
+                <span class="_txt-semi">Vezi toate</span>
+              </a>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper base swiper-promo swiperPromo">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide promo-slide">
+                  <div class="card promo-card _flex">
+                    <div class="img-wrap">
+                      <img src="img/f10.png" alt="" class="o-fit" />
+                    </div>
+                    <div class="txt-wrap _flex-col">
+                      <span class="sale-txt _desk _h3 _blue">20% reducere</span>
+                      <h4>Pachet Promoțional – „Check-up Complet”</h4>
+                      <p class="clamp-3">
+                        Stresul cotidian, stilul de viață necorespunzător.
+                      </p>
+                      <div class="bttn-wrap _flex-btwn">
+                        <!-- <span class="sale-txt _mob _h4 _blue">20% reducere</span> -->
+                        <a href="#" class="bttn bttn-border">
+                          <span class="arr-elem _flex-cntr">
+                            <svg
+                              width="18"
+                              height="14"
+                              viewBox="0 0 18 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M10.5117 0.223714C10.81 -0.0745714 11.3043 -0.0745714 11.6025 0.223714L17.7734 6.39461C17.9173 6.53852 17.9999 6.73396 18 6.93953C18 7.14525 17.9174 7.34143 17.7734 7.48543L11.6025 13.6563C11.3043 13.9546 10.81 13.9546 10.5117 13.6563C10.2138 13.3581 10.2138 12.8647 10.5117 12.5665L15.3672 7.71102H0.771484C0.34977 7.71102 0 7.36125 0 6.93953C0.000213267 6.51799 0.349899 6.16805 0.771484 6.16805H15.3662L10.5117 1.31356C10.2137 1.01536 10.2138 0.521972 10.5117 0.223714Z"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide promo-slide">
+                  <div class="card promo-card _flex">
+                    <div class="img-wrap">
+                      <img src="img/f10.png" alt="" class="o-fit" />
+                    </div>
+                    <div class="txt-wrap _flex-col">
+                      <span class="sale-txt _desk _h3 _blue">20% reducere</span>
+                      <h4>Pachet Promoțional – „Check-up Complet”</h4>
+                      <p class="clamp-3">
+                        Stresul cotidian, stilul de viață necorespunzător,
+                        activitățile zilnice istovitoare, înaintarea în vârstă
+                        își pun adesea amprenta asupra stării de sănătate.
+                      </p>
+                      <div class="bttn-wrap _flex-btwn">
+                        <span class="sale-txt _mob _h4 _blue"
+                          >20% reducere</span
+                        >
+                        <a href="#" class="bttn bttn-border">
+                          <span class="arr-elem _flex-cntr">
+                            <svg
+                              width="18"
+                              height="14"
+                              viewBox="0 0 18 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M10.5117 0.223714C10.81 -0.0745714 11.3043 -0.0745714 11.6025 0.223714L17.7734 6.39461C17.9173 6.53852 17.9999 6.73396 18 6.93953C18 7.14525 17.9174 7.34143 17.7734 7.48543L11.6025 13.6563C11.3043 13.9546 10.81 13.9546 10.5117 13.6563C10.2138 13.3581 10.2138 12.8647 10.5117 12.5665L15.3672 7.71102H0.771484C0.34977 7.71102 0 7.36125 0 6.93953C0.000213267 6.51799 0.349899 6.16805 0.771484 6.16805H15.3662L10.5117 1.31356C10.2137 1.01536 10.2138 0.521972 10.5117 0.223714Z"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide promo-slide">
+                  <div class="card promo-card _flex">
+                    <div class="img-wrap">
+                      <img src="img/f10.png" alt="" class="o-fit" />
+                    </div>
+                    <div class="txt-wrap _flex-col _flex-col">
+                      <!-- <span class="sale-txt _desk _h3 _blue">20% reducere</span> -->
+                      <h4>Pachet Promoțional – „Check-up Complet”</h4>
+                      <p class="clamp-3">Stresul cotidian</p>
+                      <div class="bttn-wrap _flex-btwn">
+                        <span class="sale-txt _mob _h4 _blue"
+                          >20% reducere</span
+                        >
+                        <a href="#" class="bttn bttn-border">
+                          <span class="arr-elem _flex-cntr">
+                            <svg
+                              width="18"
+                              height="14"
+                              viewBox="0 0 18 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M10.5117 0.223714C10.81 -0.0745714 11.3043 -0.0745714 11.6025 0.223714L17.7734 6.39461C17.9173 6.53852 17.9999 6.73396 18 6.93953C18 7.14525 17.9174 7.34143 17.7734 7.48543L11.6025 13.6563C11.3043 13.9546 10.81 13.9546 10.5117 13.6563C10.2138 13.3581 10.2138 12.8647 10.5117 12.5665L15.3672 7.71102H0.771484C0.34977 7.71102 0 7.36125 0 6.93953C0.000213267 6.51799 0.349899 6.16805 0.771484 6.16805H15.3662L10.5117 1.31356C10.2137 1.01536 10.2138 0.521972 10.5117 0.223714Z"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination promoPagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev promoPrev"></div>
+              <div class="swiper-button-next promoNext"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer--main _flex">
+            <div class="footer-col">
+              <a class="footer-logo" href="">
+                <img src="img/logo.svg" alt="" />
+              </a>
+              <p class="_txt-semi _white foot-txt">
+                Ecografia este o tehnică imagistică non-invazivă, care
+                utilizează undele sonore.
+              </p>
+              <div class="soc-wrap _flex-x">
+                <img src="img/icons/fb.svg" alt="" />
+                <img src="img/icons/insta.svg" alt="" />
+              </div>
+            </div>
+            <div class="footer-col">
+              <div class="footer-elem">
+                <h5 class="_h5 open _white">Pentru clienți</h5>
+                <ul class="acc-body open ul-norm _flex-col">
+                  <li
+                    id="menu-item-14182"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14182"
+                  >
+                    <a href="https://balkan.ro/magazin">Analize</a>
+                  </li>
+                  <li
+                    id="menu-item-14220"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14220"
+                  >
+                    <a href="https://balkan.ro/promotii">Servicii</a>
+                  </li>
+                  <li
+                    id="menu-item-14186"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14186"
+                  >
+                    <a href="https://balkan.ro/blog">Medici</a>
+                  </li>
+                  <li
+                    id="menu-item-14187"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14187"
+                  >
+                    <a href="https://balkan.ro/livrare-si-retur">Promo​</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-col">
+              <div class="footer-elem">
+                <h5 class="_h5 open _white">Informație legală</h5>
+                <ul
+                  id="foot_menu_column_3"
+                  class="acc-body open ul-norm _flex-col"
+                >
+                  <li
+                    id="menu-item-14188"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-14188"
+                  >
+                    <a
+                      rel="privacy-policy"
+                      href="https://balkan.ro/privacy-policy"
+                      >Politica de confidențialitate</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-14189"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14189"
+                  >
+                    <a href="https://balkan.ro/termeni-si-conditii"
+                      >Termeni și condiții</a
+                    >
+                  </li>
+                  <li
+                    id="menu-item-14190"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14190"
+                  >
+                    <a href="#">Despre noi</a>
+                  </li>
+                  <li
+                    id="menu-item-14191"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14191"
+                  >
+                    <a href="https://balkan.ro/despre-cookies">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-col">
+              <div class="footer-elem">
+                <h5 class="_h5 open _white">Contacte</h5>
+                <div class="acc-body open">
+                  <ul
+                    id="foot_menu_column_4"
+                    class="foot-menu-column-4 ul-norm _flex-col"
+                  >
+                    <li
+                      id="menu-item-14192"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"
+                    >
+                      <a href="https://balkan.ro/despre-noi">Despre noi</a>
+                    </li>
+                    <li
+                      id="menu-item-14192"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"
+                    >
+                      <a href="https://balkan.ro/despre-noi"
+                        >Locațiile noastre</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-14192"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"
+                    >
+                      or. Chișinău str. Nicolae Testemițanu 29/4
+                    </li>
+                    <li
+                      id="menu-item-14192"
+                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14192"
+                    >
+                      <a href="https://balkan.ro/despre-noi"
+                        >+373 (22) 89-09-30</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer--copyright _flex-cntr">
+            <span class="copyright-txt _txt _white">© 2025 Balkan Medica</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/src/scrollCue.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script type="module" src="assets/index-8khiysN8.js"></script>
+  </body>
+</html>

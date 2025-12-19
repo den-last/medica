@@ -2,10 +2,7 @@ import "./style.css";
 import "./style.scss";
 
 // console.log(newsSwiperClass);
-scrollCue.init();
 $(document).ready(function () {
-  // scrollCue.init();
-  scrollCue.update();
   $("[data-fancybox]").fancybox({
     // можно добавить опции
 });
@@ -86,11 +83,11 @@ function aboutUsAccordions() {
 // let countersSec = $(".counters-section");
 $(document).scroll(function () {
   if ($(document).scrollTop() >= 100) {
-    $(".header")
+    $(".header-transparent")
       // .removeClass("header-transparent")
       .addClass("header-fixed");
   } else {
-    $(".header").removeClass("header-fixed");
+    $(".header-transparent").removeClass("header-fixed");
     // .addClass("header-transparent");
   }
 });
