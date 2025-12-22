@@ -1247,12 +1247,13 @@ p a:hover {
 }
 
 .header-space {
-  height: 190px;
-@media screen and (max-width: 1199px) {
-    height: 175px;
-  }
+  height: 130px;
+  // background: red;
+// @media screen and (max-width: 1199px) {
+//     height: 175px;
+//   }
   @media screen and (max-width: 992px) {
-    height: 106px;
+    height: 105px;
   }
 }
 

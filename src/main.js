@@ -91,6 +91,22 @@ $(document).scroll(function () {
     // .addClass("header-transparent");
   }
 });
+const swiperBanner = new Swiper(".swiperBanner", {
+  spaceBetween: 30,
+  effect: "fade",
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, // чтобы автоплей не останавливался при клике
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 const swiperPromo = new Swiper(".swiperPromo", {
   slidesPerView: 2,
   pagination: {
